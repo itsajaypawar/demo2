@@ -1,0 +1,20 @@
+read -p "Enter the number " num
+flag=0
+if (($num==0 || $num==1));
+then
+echo "Not a prime"
+else
+for((i=2; i<num; i++));
+do
+if (($num%i == 0))
+then
+flag=1
+fi
+done
+
+if(($flag==0));
+then
+echo "Prime"
+else
+echo "Not prime"
+fi
