@@ -1,0 +1,10 @@
+read -p "Enter the number " num
+
+if(($num%2 ==0))
+then
+echo "Even number "
+elif(($num %3 ==0))
+then
+echo "Divisible by 3 "
+fi
+
