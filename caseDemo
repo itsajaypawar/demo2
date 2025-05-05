@@ -1,0 +1,13 @@
+                                
+read -p  "Enter the day number form 1 to 7 " no
+case $no in
+        1|7)
+        echo "This is sunday, funday Enjoy holiday " ;;
+        2|3|4|5|6)
+        echo "Working day" ;;
+        *)
+        cowsay "Wrong input"
+
+
+esac
+
