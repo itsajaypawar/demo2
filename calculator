@@ -1,0 +1,19 @@
+                             
+flag=True
+
+while [ $flag ]
+do
+echo -e  "Which operation you want to perform \n 1.add \n 2.sub \n 3.exit"
+read choice
+case $choice in
+        1)
+        read -p "Enter first number " num1
+        read -p "Enter second number " num2
+        echo "The addition is " $((num1+num2)) ;;
+        3)
+        break ;;
+
+
+esac
+done 
+
